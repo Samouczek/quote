@@ -5,10 +5,6 @@
      })
          .then((response) => response.json())
          .then((data) =>{
-             const array = [];
-             for (const item of data){
-                 array.push(item.quote);
-             }
              successCallback(data);
          })
          .catch((err) => console.log(err))
